@@ -1,0 +1,671 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="20000061" tvg-name="CCTV-1" tvg-chno="1"
+http://192.168.101.1:4023/udp/239.254.200.45:8008
+#EXTINF:-1 tvg-id="20000108" tvg-name="CCTV-2" tvg-chno="2"
+http://192.168.101.1:4023/udp/239.254.200.158:6000
+#EXTINF:-1 tvg-id="1004" tvg-name="CCTV-3" tvg-chno="3"
+http://192.168.101.1:4023/udp/239.254.200.13:6000
+#EXTINF:-1 tvg-id="20000188" tvg-name="CCTV-4" tvg-chno="4"
+http://192.168.101.1:4023/udp/239.254.200.190:6307
+#EXTINF:-1 tvg-id="1003" tvg-name="CCTV-5" tvg-chno="5"
+http://192.168.101.1:4023/udp/239.254.200.14:6000
+#EXTINF:-1 tvg-id="1002" tvg-name="CCTV-6" tvg-chno="6"
+http://192.168.101.1:4023/udp/239.254.200.15:6000
+#EXTINF:-1 tvg-id="20000148" tvg-name="CCTV-7" tvg-chno="7"
+http://192.168.101.1:4023/udp/239.254.200.159:6000
+#EXTINF:-1 tvg-id="20000005" tvg-name="CCTV-8" tvg-chno="8"
+http://192.168.101.1:4023/udp/239.254.200.16:6000
+#EXTINF:-1 tvg-id="20000068" tvg-name="CCTV-9" tvg-chno="9"
+http://192.168.101.1:4023/udp/239.254.200.59:8112
+#EXTINF:-1 tvg-id="20000103" tvg-name="CCTV-10" tvg-chno="10"
+http://192.168.101.1:4023/udp/239.254.200.160:6000
+#EXTINF:-1 tvg-id="146349425" tvg-name="CCTV-11" tvg-chno="11"
+http://192.168.101.1:4023/udp/239.254.201.123:8120
+#EXTINF:-1 tvg-id="20000102" tvg-name="CCTV-12" tvg-chno="12"
+http://192.168.101.1:4023/udp/239.254.200.161:6000
+#EXTINF:-1 tvg-id="20000018" tvg-name="CCTV-13" tvg-chno="13"
+http://192.168.101.1:4023/udp/239.254.200.9:8264
+#EXTINF:-1 tvg-id="20000146" tvg-name="CCTV-14" tvg-chno="14"
+http://192.168.101.1:4023/udp/239.254.200.162:6000
+#EXTINF:-1 tvg-id="147521670" tvg-name="CCTV-15" tvg-chno="15"
+http://192.168.101.1:4023/udp/239.254.201.124:8136
+#EXTINF:-1 tvg-id="20000070" tvg-name="CGTN" tvg-chno="16"
+http://192.168.101.1:4023/udp/239.254.200.12:8056
+#EXTINF:-1 tvg-id="138584027" tvg-name="CCTV-17" tvg-chno="17"
+http://192.168.101.1:4023/udp/239.254.201.120:8144
+#EXTINF:-1 tvg-id="20000027" tvg-name="CCTV-5＋" tvg-chno="18"
+http://192.168.101.1:4023/udp/239.254.200.46:8004
+#EXTINF:-1 tvg-id="20000163" tvg-name="河北卫视" tvg-chno="101"
+http://192.168.101.1:4023/udp/239.254.200.174:6000
+#EXTINF:-1 tvg-id="20000042" tvg-name="河北经济生活" tvg-chno="102"
+http://192.168.101.1:4023/udp/239.254.200.18:6000
+#EXTINF:-1 tvg-id="20000029" tvg-name="河北都市" tvg-chno="103"
+http://192.168.101.1:4023/udp/239.254.200.19:6000
+#EXTINF:-1 tvg-id="20000017" tvg-name="河北影视剧" tvg-chno="104"
+http://192.168.101.1:4023/udp/239.254.200.20:6000
+#EXTINF:-1 tvg-id="20000043" tvg-name="河北少儿科教" tvg-chno="105"
+http://192.168.101.1:4023/udp/239.254.200.21:6000
+#EXTINF:-1 tvg-id="20000011" tvg-name="河北公共" tvg-chno="106"
+http://192.168.101.1:4023/udp/239.254.200.22:6000
+#EXTINF:-1 tvg-id="20000069" tvg-name="河北农民" tvg-chno="107"
+http://192.168.101.1:4023/udp/239.254.200.23:6000
+#EXTINF:-1 tvg-id="20000064" tvg-name="睛彩河北(测试)" tvg-chno="109"
+http://192.168.101.1:4023/udp/239.254.200.27:6000
+#EXTINF:-1 tvg-id="20000091" tvg-name="三佳购物" tvg-chno="110"
+http://192.168.101.1:4023/udp/239.254.200.143:6000
+#EXTINF:-1 tvg-id="87307627" tvg-name="优购物" tvg-chno="111"
+http://192.168.101.1:4023/udp/239.254.201.78:6283
+#EXTINF:-1 tvg-id="87307623" tvg-name="快乐购物" tvg-chno="112"
+http://192.168.101.1:4023/udp/239.254.201.79:7196
+#EXTINF:-1 tvg-id="87307136" tvg-name="家有购物" tvg-chno="113"
+http://192.168.101.1:4023/udp/239.254.201.80:7192
+#EXTINF:-1 tvg-id="87306570" tvg-name="聚鲨环球精选" tvg-chno="114"
+http://192.168.101.1:4023/udp/239.254.201.81:7191
+#EXTINF:-1 tvg-id="87306569" tvg-name="时尚购物" tvg-chno="115"
+http://192.168.101.1:4023/udp/239.254.201.82:6282
+#EXTINF:-1 tvg-id="20000132" tvg-name="石家庄新闻综合" tvg-chno="130"
+http://192.168.101.1:4023/udp/239.254.200.157:6000
+#EXTINF:-1 tvg-id="20000083" tvg-name="石家庄娱乐" tvg-chno="131"
+http://192.168.101.1:4023/udp/239.254.200.29:6000
+#EXTINF:-1 tvg-id="20000082" tvg-name="石家庄生活" tvg-chno="132"
+http://192.168.101.1:4023/udp/239.254.200.30:6000
+#EXTINF:-1 tvg-id="20000076" tvg-name="石家庄都市" tvg-chno="133"
+http://192.168.101.1:4023/udp/239.254.200.31:6000
+#EXTINF:-1 tvg-id="20000135" tvg-name="承德新闻综合" tvg-chno="135"
+http://192.168.101.1:4023/udp/239.254.200.32:6000
+#EXTINF:-1 tvg-id="20000121" tvg-name="承德公共" tvg-chno="136"
+http://192.168.101.1:4023/udp/239.254.200.33:6000
+#EXTINF:-1 tvg-id="20000144" tvg-name="承德旅游文化" tvg-chno="137"
+http://192.168.101.1:4023/udp/239.254.200.34:6000
+#EXTINF:-1 tvg-id="20000123" tvg-name="张家口-1" tvg-chno="140"
+http://192.168.101.1:4023/udp/239.254.200.35:6000
+#EXTINF:-1 tvg-id="20000122" tvg-name="张家口-2" tvg-chno="141"
+http://192.168.101.1:4023/udp/239.254.200.36:6000
+#EXTINF:-1 tvg-id="20000145" tvg-name="张家口-3" tvg-chno="142"
+http://192.168.101.1:4023/udp/239.254.200.37:6000
+#EXTINF:-1 tvg-id="20000128" tvg-name="张家口导视" tvg-chno="143"
+http://192.168.101.1:4023/udp/239.254.200.38:6000
+#EXTINF:-1 tvg-id="20000126" tvg-name="秦皇岛-1" tvg-chno="145"
+http://192.168.101.1:4023/udp/239.254.200.39:6000
+#EXTINF:-1 tvg-id="20000125" tvg-name="秦皇岛-2" tvg-chno="146"
+http://192.168.101.1:4023/udp/239.254.200.40:6000
+#EXTINF:-1 tvg-id="20000124" tvg-name="秦皇岛-3" tvg-chno="147"
+http://192.168.101.1:4023/udp/239.254.200.41:6000
+#EXTINF:-1 tvg-id="20000153" tvg-name="唐山新闻综合" tvg-chno="150"
+http://192.168.101.1:4023/udp/239.254.200.166:6000
+#EXTINF:-1 tvg-id="20000150" tvg-name="唐山生活服务" tvg-chno="151"
+http://192.168.101.1:4023/udp/239.254.200.167:6000
+#EXTINF:-1 tvg-id="20000152" tvg-name="唐山影视" tvg-chno="152"
+http://192.168.101.1:4023/udp/239.254.200.168:6000
+#EXTINF:-1 tvg-id="20000151" tvg-name="唐山公共" tvg-chno="153"
+http://192.168.101.1:4023/udp/239.254.200.169:6000
+#EXTINF:-1 tvg-id="20000155" tvg-name="廊坊新闻" tvg-chno="155"
+http://192.168.101.1:4023/udp/239.254.200.183:6000
+#EXTINF:-1 tvg-id="20000167" tvg-name="廊坊公共" tvg-chno="156"
+http://192.168.101.1:4023/udp/239.254.200.184:6000
+#EXTINF:-1 tvg-id="20000094" tvg-name="廊坊导视" tvg-chno="158"
+http://192.168.101.1:4023/udp/239.254.200.186:6000
+#EXTINF:-1 tvg-id="20000131" tvg-name="沧州-1" tvg-chno="160"
+http://192.168.101.1:4023/udp/239.254.200.42:6000
+#EXTINF:-1 tvg-id="20000130" tvg-name="沧州-2" tvg-chno="161"
+http://192.168.101.1:4023/udp/239.254.200.43:6000
+#EXTINF:-1 tvg-id="20000129" tvg-name="沧州-3" tvg-chno="162"
+http://192.168.101.1:4023/udp/239.254.200.44:6000
+#EXTINF:-1 tvg-id="20000114" tvg-name="保定新闻综合" tvg-chno="165"
+http://192.168.101.1:4023/udp/239.254.200.144:6000
+#EXTINF:-1 tvg-id="20000141" tvg-name="保定经济生活" tvg-chno="166"
+http://192.168.101.1:4023/udp/239.254.200.145:6000
+#EXTINF:-1 tvg-id="20000140" tvg-name="保定文化娱乐" tvg-chno="167"
+http://192.168.101.1:4023/udp/239.254.200.146:6000
+#EXTINF:-1 tvg-id="20000117" tvg-name="衡水新闻综合" tvg-chno="170"
+http://192.168.101.1:4023/udp/239.254.200.147:6000
+#EXTINF:-1 tvg-id="20000116" tvg-name="衡水影视" tvg-chno="171"
+http://192.168.101.1:4023/udp/239.254.200.148:6000
+#EXTINF:-1 tvg-id="20000115" tvg-name="衡水公共" tvg-chno="172"
+http://192.168.101.1:4023/udp/239.254.200.149:6000
+#EXTINF:-1 tvg-id="20000119" tvg-name="邢台综合" tvg-chno="175"
+http://192.168.101.1:4023/udp/239.254.200.150:6000
+#EXTINF:-1 tvg-id="20000127" tvg-name="邢台生活" tvg-chno="176"
+http://192.168.101.1:4023/udp/239.254.200.151:6000
+#EXTINF:-1 tvg-id="20000118" tvg-name="邢台公共" tvg-chno="177"
+http://192.168.101.1:4023/udp/239.254.200.152:6000
+#EXTINF:-1 tvg-id="20000120" tvg-name="邯郸新闻综合" tvg-chno="180"
+http://192.168.101.1:4023/udp/239.254.200.153:6000
+#EXTINF:-1 tvg-id="20000143" tvg-name="邯郸公共" tvg-chno="181"
+http://192.168.101.1:4023/udp/239.254.200.154:6000
+#EXTINF:-1 tvg-id="20000142" tvg-name="邯郸科技教育" tvg-chno="182"
+http://192.168.101.1:4023/udp/239.254.200.155:6000
+#EXTINF:-1 tvg-id="20000022" tvg-name="湖南卫视" tvg-chno="200"
+http://192.168.101.1:4023/udp/239.254.200.48:8012
+#EXTINF:-1 tvg-id="20000052" tvg-name="浙江卫视" tvg-chno="201"
+http://192.168.101.1:4023/udp/239.254.200.53:8036
+#EXTINF:-1 tvg-id="20000046" tvg-name="江苏卫视" tvg-chno="202"
+http://192.168.101.1:4023/udp/239.254.200.51:8028
+#EXTINF:-1 tvg-id="20000149" tvg-name="安徽卫视" tvg-chno="203"
+http://192.168.101.1:4023/udp/239.254.200.163:6000
+#EXTINF:-1 tvg-id="1118" tvg-name="东南卫视" tvg-chno="204"
+http://192.168.101.1:4023/udp/239.254.201.13:6291
+#EXTINF:-1 tvg-id="20000021" tvg-name="北京卫视" tvg-chno="205"
+http://192.168.101.1:4023/udp/239.254.200.47:8024
+#EXTINF:-1 tvg-id="20000051" tvg-name="天津卫视" tvg-chno="206"
+http://192.168.101.1:4023/udp/239.254.200.54:1234
+#EXTINF:-1 tvg-id="20000067" tvg-name="辽宁卫视" tvg-chno="207"
+http://192.168.101.1:4023/udp/239.254.200.57:8056
+#EXTINF:-1 tvg-id="20000081" tvg-name="山东卫视" tvg-chno="208"
+http://192.168.101.1:4023/udp/239.254.200.55:8052
+#EXTINF:-1 tvg-id="20000040" tvg-name="云南卫视" tvg-chno="209"
+http://192.168.101.1:4023/udp/239.254.200.68:8108
+#EXTINF:-1 tvg-id="1153" tvg-name="河南卫视" tvg-chno="210"
+http://192.168.101.1:4023/udp/239.254.201.16:7174
+#EXTINF:-1 tvg-id="20000058" tvg-name="黑龙江卫视" tvg-chno="211"
+http://192.168.101.1:4023/udp/239.254.200.49:8016
+#EXTINF:-1 tvg-id="20000204" tvg-name="四川卫视" tvg-chno="212"
+http://192.168.101.1:4023/udp/239.254.200.202:6325
+#EXTINF:-1 tvg-id="1117" tvg-name="江西卫视" tvg-chno="213"
+http://192.168.101.1:4023/udp/239.254.201.12:6290
+#EXTINF:-1 tvg-id="1193" tvg-name="贵州卫视" tvg-chno="214"
+http://192.168.101.1:4023/udp/239.254.201.20:6315
+#EXTINF:-1 tvg-id="20000047" tvg-name="深圳卫视" tvg-chno="215"
+http://192.168.101.1:4023/udp/239.254.200.50:8020
+#EXTINF:-1 tvg-id="20000147" tvg-name="湖北卫视" tvg-chno="216"
+http://192.168.101.1:4023/udp/239.254.200.164:6000
+#EXTINF:-1 tvg-id="20000057" tvg-name="东方卫视" tvg-chno="217"
+http://192.168.101.1:4023/udp/239.254.200.52:8032
+#EXTINF:-1 tvg-id="20000203" tvg-name="重庆卫视" tvg-chno="218"
+http://192.168.101.1:4023/udp/239.254.200.203:6323
+#EXTINF:-1 tvg-id="20000065" tvg-name="广东卫视" tvg-chno="221"
+http://192.168.101.1:4023/udp/239.254.200.56:8048
+#EXTINF:-1 tvg-id="20000073" tvg-name="广西卫视" tvg-chno="222"
+http://192.168.101.1:4023/udp/239.254.200.80:8300
+#EXTINF:-1 tvg-id="1134" tvg-name="吉林卫视" tvg-chno="223"
+http://192.168.101.1:4023/udp/239.254.201.15:6339
+#EXTINF:-1 tvg-id="20000023" tvg-name="陕西卫视" tvg-chno="224"
+http://192.168.101.1:4023/udp/239.254.200.82:8140
+#EXTINF:-1 tvg-id="20000031" tvg-name="山西卫视" tvg-chno="225"
+http://192.168.101.1:4023/udp/239.254.200.83:8172
+#EXTINF:-1 tvg-id="20000072" tvg-name="内蒙古卫视" tvg-chno="226"
+http://192.168.101.1:4023/udp/239.254.200.84:8176
+#EXTINF:-1 tvg-id="20000025" tvg-name="青海卫视" tvg-chno="227"
+http://192.168.101.1:4023/udp/239.254.200.85:8184
+#EXTINF:-1 tvg-id="147520687" tvg-name="海南卫视高清" tvg-chno="228"
+http://192.168.101.1:4023/udp/239.254.201.125:6288
+#EXTINF:-1 tvg-id="20000036" tvg-name="宁夏卫视" tvg-chno="229"
+http://192.168.101.1:4023/udp/239.254.200.87:8124
+#EXTINF:-1 tvg-id="20000016" tvg-name="西藏卫视" tvg-chno="230"
+http://192.168.101.1:4023/udp/239.254.200.88:8164
+#EXTINF:-1 tvg-id="20000026" tvg-name="新疆卫视" tvg-chno="231"
+http://192.168.101.1:4023/udp/239.254.200.89:8160
+#EXTINF:-1 tvg-id="20000032" tvg-name="甘肃卫视" tvg-chno="232"
+http://192.168.101.1:4023/udp/239.254.200.90:8188
+#EXTINF:-1 tvg-id="20000055" tvg-name="卡酷动画" tvg-chno="233"
+http://192.168.101.1:4023/udp/239.254.200.91:9248
+#EXTINF:-1 tvg-id="20000054" tvg-name="金鹰卡通" tvg-chno="234"
+http://192.168.101.1:4023/udp/239.254.200.92:9252
+#EXTINF:-1 tvg-id="20000235" tvg-name="山东教育" tvg-chno="238"
+http://192.168.101.1:4023/udp/239.254.200.247:4120
+#EXTINF:-1 tvg-id="20000066" tvg-name="纪实高清" tvg-chno="251"
+http://192.168.101.1:4023/udp/239.254.200.58:8060
+#EXTINF:-1 tvg-id="20000222" tvg-name="CETV-1高清" tvg-chno="252"
+http://192.168.101.1:4023/udp/239.254.200.225:6259
+#EXTINF:-1 tvg-id="20000184" tvg-name="BTV冬奥纪实" tvg-chno="253"
+http://192.168.101.1:4023/udp/239.254.200.188:6311
+#EXTINF:-1 tvg-id="20000185" tvg-name="金鹰纪实高清" tvg-chno="254"
+http://192.168.101.1:4023/udp/239.254.200.189:6293
+#EXTINF:-1 tvg-id="1235" tvg-name="陶瓷频道" tvg-chno="255"
+http://192.168.101.1:4023/udp/239.254.201.21:7175
+#EXTINF:-1 tvg-id="20000169" tvg-name="电视指南" tvg-chno="401"
+http://192.168.101.1:4023/udp/239.254.200.142:6256
+#EXTINF:-1 tvg-id="20000096" tvg-name="第一剧场" tvg-chno="402"
+http://192.168.101.1:4023/udp/239.254.200.93:6227
+#EXTINF:-1 tvg-id="20000095" tvg-name="风云剧场" tvg-chno="403"
+http://192.168.101.1:4023/udp/239.254.200.94:6228
+#EXTINF:-1 tvg-id="20000170" tvg-name="怀旧剧场" tvg-chno="404"
+http://192.168.101.1:4023/udp/239.254.200.95:6229
+#EXTINF:-1 tvg-id="20000158" tvg-name="风云音乐" tvg-chno="405"
+http://192.168.101.1:4023/udp/239.254.200.96:6230
+#EXTINF:-1 tvg-id="20000166" tvg-name="风云足球" tvg-chno="406"
+http://192.168.101.1:4023/udp/239.254.200.97:6231
+#EXTINF:-1 tvg-id="20000171" tvg-name="高尔夫网球" tvg-chno="407"
+http://192.168.101.1:4023/udp/239.254.200.98:6232
+#EXTINF:-1 tvg-id="20000172" tvg-name="武术世界" tvg-chno="412"
+http://192.168.101.1:4023/udp/239.254.200.100:6234
+#EXTINF:-1 tvg-id="20000220" tvg-name="兵器科技" tvg-chno="414"
+http://192.168.101.1:4023/udp/239.254.200.101:6235
+#EXTINF:-1 tvg-id="20000176" tvg-name="世界地理" tvg-chno="415"
+http://192.168.101.1:4023/udp/239.254.200.102:6236
+#EXTINF:-1 tvg-id="20000175" tvg-name="老故事" tvg-chno="417"
+http://192.168.101.1:4023/udp/239.254.200.104:6237
+#EXTINF:-1 tvg-id="20000174" tvg-name="环球奇观" tvg-chno="418"
+http://192.168.101.1:4023/udp/239.254.200.105:6238
+#EXTINF:-1 tvg-id="20000173" tvg-name="文物宝库" tvg-chno="419"
+http://192.168.101.1:4023/udp/239.254.200.106:6239
+#EXTINF:-1 tvg-id="20000165" tvg-name="国学" tvg-chno="420"
+http://192.168.101.1:4023/udp/239.254.200.107:6255
+#EXTINF:-1 tvg-id="20000219" tvg-name="茶频道" tvg-chno="421"
+http://192.168.101.1:4023/udp/239.254.200.228:6258
+#EXTINF:-1 tvg-id="20000105" tvg-name="DV生活" tvg-chno="422"
+http://192.168.101.1:4023/udp/239.254.200.109:6240
+#EXTINF:-1 tvg-id="20000186" tvg-name="女性时尚" tvg-chno="423"
+http://192.168.101.1:4023/udp/239.254.200.110:6241
+#EXTINF:-1 tvg-id="20000156" tvg-name="文化精品" tvg-chno="424"
+http://192.168.101.1:4023/udp/239.254.200.111:6251
+#EXTINF:-1 tvg-id="20000101" tvg-name="新科动漫" tvg-chno="426"
+http://192.168.101.1:4023/udp/239.254.200.112:6242
+#EXTINF:-1 tvg-id="20000104" tvg-name="中学生" tvg-chno="427"
+http://192.168.101.1:4023/udp/239.254.200.113:6243
+#EXTINF:-1 tvg-id="20000139" tvg-name="早期教育" tvg-chno="428"
+http://192.168.101.1:4023/udp/239.254.200.114:6244
+#EXTINF:-1 tvg-id="95316901" tvg-name="快乐垂钓" tvg-chno="432"
+http://192.168.101.1:4023/udp/239.254.200.229:6257
+#EXTINF:-1 tvg-id="20000164" tvg-name="英语辅导" tvg-chno="434"
+http://192.168.101.1:4023/udp/239.254.200.116:6245
+#EXTINF:-1 tvg-id="20000218" tvg-name="书画" tvg-chno="436"
+http://192.168.101.1:4023/udp/239.254.200.217:6267
+#EXTINF:-1 tvg-id="20000187" tvg-name="摄影" tvg-chno="437"
+http://192.168.101.1:4023/udp/239.254.200.119:6246
+#EXTINF:-1 tvg-id="20000202" tvg-name="梨园" tvg-chno="438"
+http://192.168.101.1:4023/udp/239.254.200.120:6247
+#EXTINF:-1 tvg-id="20000182" tvg-name="卫生健康" tvg-chno="439"
+http://192.168.101.1:4023/udp/239.254.200.121:6248
+#EXTINF:-1 tvg-id="20000106" tvg-name="靓妆" tvg-chno="440"
+http://192.168.101.1:4023/udp/239.254.200.122:6249
+#EXTINF:-1 tvg-id="20000178" tvg-name="彩民在线" tvg-chno="441"
+http://192.168.101.1:4023/udp/239.254.200.123:6250
+#EXTINF:-1 tvg-id="20000099" tvg-name="汽摩" tvg-chno="442"
+http://192.168.101.1:4023/udp/239.254.200.103:6252
+#EXTINF:-1 tvg-id="20000180" tvg-name="CETV-2" tvg-chno="446"
+http://192.168.101.1:4023/udp/239.254.200.226:6260
+#EXTINF:-1 tvg-id="20000221" tvg-name="CETV-4" tvg-chno="447"
+http://192.168.101.1:4023/udp/239.254.200.227:6261
+#EXTINF:-1 tvg-id="126916574" tvg-name="中国交通频道" tvg-chno="448"
+http://192.168.101.1:4023/udp/239.254.201.110:5181
+#EXTINF:-1 tvg-id="20000007" tvg-name="财富天下" tvg-chno="617"
+http://192.168.101.1:4023/udp/239.254.200.124:9136
+#EXTINF:-1 tvg-id="20000044" tvg-name="CCTV-1（标清）" tvg-chno="651"
+http://192.168.101.1:4023/udp/239.254.200.1:8080
+#EXTINF:-1 tvg-id="1005" tvg-name="CCTV-2标清" tvg-chno="652"
+http://192.168.101.1:4023/udp/239.254.200.2:8004
+#EXTINF:-1 tvg-id="1007" tvg-name="CCTV-4标清" tvg-chno="653"
+http://192.168.101.1:4023/udp/239.254.200.3:8216
+#EXTINF:-1 tvg-id="1006" tvg-name="CCTV-7标清" tvg-chno="654"
+http://192.168.101.1:4023/udp/239.254.200.4:8024
+#EXTINF:-1 tvg-id="20000013" tvg-name="CCTV-9标清" tvg-chno="655"
+http://192.168.101.1:4023/udp/239.254.200.5:8032
+#EXTINF:-1 tvg-id="20000003" tvg-name="CCTV-10标清" tvg-chno="656"
+http://192.168.101.1:4023/udp/239.254.200.6:8228
+#EXTINF:-1 tvg-id="20000001" tvg-name="CCTV-12标清" tvg-chno="657"
+http://192.168.101.1:4023/udp/239.254.200.8:8232
+#EXTINF:-1 tvg-id="20000012" tvg-name="CCTV-14标清" tvg-chno="658"
+http://192.168.101.1:4023/udp/239.254.200.10:8236
+#EXTINF:-1 tvg-id="20000028" tvg-name="河北卫视标清" tvg-chno="660"
+http://192.168.101.1:4023/udp/239.254.200.17:6000
+#EXTINF:-1 tvg-id="20000090" tvg-name="石家庄新闻综合标清" tvg-chno="661"
+http://192.168.101.1:4023/udp/239.254.200.28:6000
+#EXTINF:-1 tvg-id="20000084" tvg-name="湖南卫视" tvg-chno="662"
+http://192.168.101.1:4023/udp/239.254.200.60:8064
+#EXTINF:-1 tvg-id="20000039" tvg-name="浙江卫视标清" tvg-chno="663"
+http://192.168.101.1:4023/udp/239.254.200.61:8284
+#EXTINF:-1 tvg-id="20000085" tvg-name="江苏卫视标清" tvg-chno="664"
+http://192.168.101.1:4023/udp/239.254.200.62:8276
+#EXTINF:-1 tvg-id="20000086" tvg-name="北京卫视标清" tvg-chno="666"
+http://192.168.101.1:4023/udp/239.254.200.64:8240
+#EXTINF:-1 tvg-id="20000048" tvg-name="天津卫视标清" tvg-chno="667"
+http://192.168.101.1:4023/udp/239.254.200.65:8144
+#EXTINF:-1 tvg-id="20000087" tvg-name="辽宁卫视标清" tvg-chno="668"
+http://192.168.101.1:4023/udp/239.254.200.66:8116
+#EXTINF:-1 tvg-id="20000035" tvg-name="山东卫视标清" tvg-chno="669"
+http://192.168.101.1:4023/udp/239.254.200.67:8148
+#EXTINF:-1 tvg-id="20000060" tvg-name="河南卫视标清" tvg-chno="670"
+http://192.168.101.1:4023/udp/239.254.200.69:8128
+#EXTINF:-1 tvg-id="20000006" tvg-name="黑龙江卫视标清" tvg-chno="671"
+http://192.168.101.1:4023/udp/239.254.200.70:8196
+#EXTINF:-1 tvg-id="20000075" tvg-name="四川卫视标清" tvg-chno="672"
+http://192.168.101.1:4023/udp/239.254.200.71:8288
+#EXTINF:-1 tvg-id="20000089" tvg-name="江西卫视标清" tvg-chno="673"
+http://192.168.101.1:4023/udp/239.254.200.72:8280
+#EXTINF:-1 tvg-id="20000037" tvg-name="贵州卫视标清" tvg-chno="674"
+http://192.168.101.1:4023/udp/239.254.200.73:8120
+#EXTINF:-1 tvg-id="20000015" tvg-name="深圳卫视标清" tvg-chno="675"
+http://192.168.101.1:4023/udp/239.254.200.74:9244
+#EXTINF:-1 tvg-id="20000024" tvg-name="湖北卫视标清" tvg-chno="676"
+http://192.168.101.1:4023/udp/239.254.200.75:8136
+#EXTINF:-1 tvg-id="20000041" tvg-name="东方卫视" tvg-chno="677"
+http://192.168.101.1:4023/udp/239.254.200.76:8192
+#EXTINF:-1 tvg-id="20000074" tvg-name="重庆卫视标清" tvg-chno="678"
+http://192.168.101.1:4023/udp/239.254.200.77:8296
+#EXTINF:-1 tvg-id="20000059" tvg-name="东南卫视标清" tvg-chno="679"
+http://192.168.101.1:4023/udp/239.254.200.78:8112
+#EXTINF:-1 tvg-id="20000033" tvg-name="广东卫视标清" tvg-chno="680"
+http://192.168.101.1:4023/udp/239.254.200.79:8132
+#EXTINF:-1 tvg-id="20000034" tvg-name="吉林卫视标清" tvg-chno="681"
+http://192.168.101.1:4023/udp/239.254.200.81:8200
+#EXTINF:-1 tvg-id="39892525" tvg-name="凤凰卫视电影台" tvg-chno="682"
+http://192.168.101.1:4023/udp/239.254.201.1:5214
+#EXTINF:-1 tvg-id="39892529" tvg-name="凤凰卫视中文台" tvg-chno="683"
+http://192.168.101.1:4023/udp/239.254.201.2:5226
+#EXTINF:-1 tvg-id="39892530" tvg-name="凤凰卫视资讯台" tvg-chno="684"
+http://192.168.101.1:4023/udp/239.254.201.3:5227
+#EXTINF:-1 tvg-id="138583340" tvg-name="CCTV-17" tvg-chno="685"
+http://192.168.101.1:4023/udp/239.254.201.121:8064
+#EXTINF:-1 tvg-id="20000071" tvg-name="CCTV-11" tvg-chno="690"
+http://192.168.101.1:4023/udp/239.254.200.7:8040
+#EXTINF:-1 tvg-id="20000019" tvg-name="CCTV-15标清" tvg-chno="691"
+http://192.168.101.1:4023/udp/239.254.200.11:8052
+#EXTINF:-1 tvg-id="122547880" tvg-name="海南卫视" tvg-chno="692"
+http://192.168.101.1:4023/udp/239.254.200.86:8304
+#EXTINF:-1 tvg-id="20000190" tvg-name="元氏" tvg-chno="701"
+http://192.168.101.1:4023/udp/239.254.200.191:5169
+#EXTINF:-1 tvg-id="20000134" tvg-name="无极新闻综合" tvg-chno="702"
+http://192.168.101.1:4023/udp/239.254.200.220:5167
+#EXTINF:-1 tvg-id="20000205" tvg-name="无极生活教育" tvg-chno="703"
+http://192.168.101.1:4023/udp/239.254.200.221:5168
+#EXTINF:-1 tvg-id="54870055" tvg-name="高邑台" tvg-chno="704"
+http://192.168.101.1:4023/udp/239.254.201.24:5170
+#EXTINF:-1 tvg-id="55615478" tvg-name="高邑台-2" tvg-chno="705"
+http://192.168.101.1:4023/udp/239.254.201.25:5171
+#EXTINF:-1 tvg-id="20000093" tvg-name="栾城-1" tvg-chno="706"
+http://192.168.101.1:4023/udp/239.254.200.215:5173
+#EXTINF:-1 tvg-id="1133" tvg-name="井陉矿区-1" tvg-chno="708"
+http://192.168.101.1:4023/udp/239.254.201.14:5175
+#EXTINF:-1 tvg-id="20000231" tvg-name="赞皇" tvg-chno="709"
+http://192.168.101.1:4023/udp/239.254.200.244:5177
+#EXTINF:-1 tvg-id="124224733" tvg-name="深泽综合" tvg-chno="710"
+http://192.168.101.1:4023/udp/239.254.201.108:5180
+#EXTINF:-1 tvg-id="127813797" tvg-name="赵县-1" tvg-chno="711"
+http://192.168.101.1:4023/udp/239.254.201.111:5183
+#EXTINF:-1 tvg-id="154541729" tvg-name="晋州综合" tvg-chno="712"
+http://192.168.101.1:4023/udp/239.254.201.127:5184
+#EXTINF:-1 tvg-id="154541733" tvg-name="晋州资讯" tvg-chno="713"
+http://192.168.101.1:4023/udp/239.254.201.128:5185
+#EXTINF:-1 tvg-id="20000109" tvg-name="平泉综合" tvg-chno="733"
+http://192.168.101.1:4023/udp/239.254.200.177:5286
+#EXTINF:-1 tvg-id="40680163" tvg-name="滦平新闻" tvg-chno="735"
+http://192.168.101.1:4023/udp/239.254.201.4:5291
+#EXTINF:-1 tvg-id="40680167" tvg-name="滦平生活" tvg-chno="736"
+http://192.168.101.1:4023/udp/239.254.201.5:5292
+#EXTINF:-1 tvg-id="60018274" tvg-name="双滦新闻" tvg-chno="737"
+http://192.168.101.1:4023/udp/239.254.201.63:5293
+#EXTINF:-1 tvg-id="60018264" tvg-name="双滦影视" tvg-chno="738"
+http://192.168.101.1:4023/udp/239.254.201.64:5294
+#EXTINF:-1 tvg-id="91989611" tvg-name="兴隆综合" tvg-chno="739"
+http://192.168.101.1:4023/udp/239.254.201.95:5295
+#EXTINF:-1 tvg-id="129402912" tvg-name="任县-1" tvg-chno="747"
+http://192.168.101.1:4023/udp/239.254.201.115:5381
+#EXTINF:-1 tvg-id="129402686" tvg-name="邯山综合" tvg-chno="748"
+http://192.168.101.1:4023/udp/239.254.201.116:5225
+#EXTINF:-1 tvg-id="133203090" tvg-name="崇礼综合" tvg-chno="749"
+http://192.168.101.1:4023/udp/239.254.201.117:5267
+#EXTINF:-1 tvg-id="134290318" tvg-name="顺平-1" tvg-chno="750"
+http://192.168.101.1:4023/udp/239.254.201.118:6257
+#EXTINF:-1 tvg-id="156205778" tvg-name="邱县综合" tvg-chno="753"
+http://192.168.101.1:4023/udp/239.254.201.129:6209
+#EXTINF:-1 tvg-id="59175764" tvg-name="昌黎-1" tvg-chno="758"
+http://192.168.101.1:4023/udp/239.254.201.61:5230
+#EXTINF:-1 tvg-id="59175763" tvg-name="昌黎-2" tvg-chno="759"
+http://192.168.101.1:4023/udp/239.254.201.62:5231
+#EXTINF:-1 tvg-id="20000224" tvg-name="丰南-1" tvg-chno="768"
+http://192.168.101.1:4023/udp/239.254.200.218:5186
+#EXTINF:-1 tvg-id="20000223" tvg-name="丰南-2" tvg-chno="769"
+http://192.168.101.1:4023/udp/239.254.200.219:5187
+#EXTINF:-1 tvg-id="1234" tvg-name="滦南新闻综合" tvg-chno="772"
+http://192.168.101.1:4023/udp/239.254.201.22:5191
+#EXTINF:-1 tvg-id="1233" tvg-name="滦南影视娱乐" tvg-chno="773"
+http://192.168.101.1:4023/udp/239.254.201.23:5192
+#EXTINF:-1 tvg-id="54870072" tvg-name="玉田综合" tvg-chno="774"
+http://192.168.101.1:4023/udp/239.254.201.28:5194
+#EXTINF:-1 tvg-id="54870064" tvg-name="新闻资讯" tvg-chno="775"
+http://192.168.101.1:4023/udp/239.254.201.29:5193
+#EXTINF:-1 tvg-id="54870052" tvg-name="滦州综合" tvg-chno="776"
+http://192.168.101.1:4023/udp/239.254.201.30:5196
+#EXTINF:-1 tvg-id="54869710" tvg-name="滦州综艺" tvg-chno="777"
+http://192.168.101.1:4023/udp/239.254.201.31:5195
+#EXTINF:-1 tvg-id="54870053" tvg-name="香河综合" tvg-chno="778"
+http://192.168.101.1:4023/udp/239.254.201.32:5306
+#EXTINF:-1 tvg-id="54870065" tvg-name="香河影视" tvg-chno="779"
+http://192.168.101.1:4023/udp/239.254.201.33:5307
+#EXTINF:-1 tvg-id="54870048" tvg-name="大城" tvg-chno="780"
+http://192.168.101.1:4023/udp/239.254.201.34:5308
+#EXTINF:-1 tvg-id="67044861" tvg-name="廊坊大厂" tvg-chno="781"
+http://192.168.101.1:4023/udp/239.254.201.71:5310
+#EXTINF:-1 tvg-id="107089162" tvg-name="固安综合" tvg-chno="782"
+http://192.168.101.1:4023/udp/239.254.201.101:5312
+#EXTINF:-1 tvg-id="109854372" tvg-name="文安综合" tvg-chno="783"
+http://192.168.101.1:4023/udp/239.254.201.103:5314
+#EXTINF:-1 tvg-id="129402690" tvg-name="三河新闻综合" tvg-chno="785"
+http://192.168.101.1:4023/udp/239.254.201.113:5315
+#EXTINF:-1 tvg-id="54869338" tvg-name="渤海新区" tvg-chno="790"
+http://192.168.101.1:4023/udp/239.254.201.35:5327
+#EXTINF:-1 tvg-id="54867916" tvg-name="孟村综合" tvg-chno="793"
+http://192.168.101.1:4023/udp/239.254.201.38:5329
+#EXTINF:-1 tvg-id="54867928" tvg-name="孟村影视" tvg-chno="794"
+http://192.168.101.1:4023/udp/239.254.201.39:5330
+#EXTINF:-1 tvg-id="84509297" tvg-name="东光-1" tvg-chno="795"
+http://192.168.101.1:4023/udp/239.254.201.76:5331
+#EXTINF:-1 tvg-id="127814213" tvg-name="青县-1" tvg-chno="796"
+http://192.168.101.1:4023/udp/239.254.201.112:5333
+#EXTINF:-1 tvg-id="129402938" tvg-name="盐山新闻综合" tvg-chno="797"
+http://192.168.101.1:4023/udp/239.254.201.114:5334
+#EXTINF:-1 tvg-id="137186061" tvg-name="南皮一套" tvg-chno="798"
+http://192.168.101.1:4023/udp/239.254.201.119:5335
+#EXTINF:-1 tvg-id="138584825" tvg-name="肃宁一套" tvg-chno="799"
+http://192.168.101.1:4023/udp/239.254.201.122:5336
+#EXTINF:-1 tvg-id="38472703" tvg-name="多视角测试一" tvg-chno="801"
+http://192.168.101.1:4023/udp/239.254.200.251:6000
+#EXTINF:-1 tvg-id="38455113" tvg-name="多视角测试二" tvg-chno="802"
+http://192.168.101.1:4023/udp/239.254.200.252:6000
+#EXTINF:-1 tvg-id="38455109" tvg-name="多视角测试三" tvg-chno="803"
+http://192.168.101.1:4023/udp/239.254.200.253:6000
+#EXTINF:-1 tvg-id="38455117" tvg-name="多视角测试四" tvg-chno="804"
+http://192.168.101.1:4023/udp/239.254.200.254:6000
+#EXTINF:-1 tvg-id="20000161" tvg-name="定兴-1" tvg-chno="811"
+http://192.168.101.1:4023/udp/239.254.200.172:5246
+#EXTINF:-1 tvg-id="20000162" tvg-name="定兴-2" tvg-chno="812"
+http://192.168.101.1:4023/udp/239.254.200.173:5247
+#EXTINF:-1 tvg-id="54867919" tvg-name="阜平" tvg-chno="813"
+http://192.168.101.1:4023/udp/239.254.201.40:5248
+#EXTINF:-1 tvg-id="1114" tvg-name="涞水-1" tvg-chno="814"
+http://192.168.101.1:4023/udp/239.254.201.10:5250
+#EXTINF:-1 tvg-id="1113" tvg-name="涞水-2" tvg-chno="815"
+http://192.168.101.1:4023/udp/239.254.201.11:5251
+#EXTINF:-1 tvg-id="20000207" tvg-name="满城新闻" tvg-chno="816"
+http://192.168.101.1:4023/udp/239.254.200.222:5252
+#EXTINF:-1 tvg-id="20000206" tvg-name="满城综艺" tvg-chno="817"
+http://192.168.101.1:4023/udp/239.254.200.223:5253
+#EXTINF:-1 tvg-id="20000214" tvg-name="高碑店-1" tvg-chno="820"
+http://192.168.101.1:4023/udp/239.254.200.210:5254
+#EXTINF:-1 tvg-id="20000179" tvg-name="清苑新闻" tvg-chno="821"
+http://192.168.101.1:4023/udp/239.254.200.117:5256
+#EXTINF:-1 tvg-id="20000177" tvg-name="清苑生活" tvg-chno="822"
+http://192.168.101.1:4023/udp/239.254.200.118:5257
+#EXTINF:-1 tvg-id="20000189" tvg-name="清苑农村" tvg-chno="823"
+http://192.168.101.1:4023/udp/239.254.200.214:5258
+#EXTINF:-1 tvg-id="1175" tvg-name="涿州新闻高清" tvg-chno="824"
+http://192.168.101.1:4023/udp/239.254.201.17:5261
+#EXTINF:-1 tvg-id="1174" tvg-name="涿州生活高清" tvg-chno="825"
+http://192.168.101.1:4023/udp/239.254.201.18:5262
+#EXTINF:-1 tvg-id="1173" tvg-name="涿州都市高清" tvg-chno="826"
+http://192.168.101.1:4023/udp/239.254.201.19:5263
+#EXTINF:-1 tvg-id="20000113" tvg-name="曲阳-1" tvg-chno="828"
+http://192.168.101.1:4023/udp/239.254.200.242:5265
+#EXTINF:-1 tvg-id="54861981" tvg-name="望都-1" tvg-chno="829"
+http://192.168.101.1:4023/udp/239.254.201.56:6246
+#EXTINF:-1 tvg-id="54863381" tvg-name="望都-2" tvg-chno="830"
+http://192.168.101.1:4023/udp/239.254.201.57:6247
+#EXTINF:-1 tvg-id="75916994" tvg-name="定州新闻综合" tvg-chno="831"
+http://192.168.101.1:4023/udp/239.254.201.74:6251
+#EXTINF:-1 tvg-id="75915575" tvg-name="定州生活" tvg-chno="832"
+http://192.168.101.1:4023/udp/239.254.201.75:6252
+#EXTINF:-1 tvg-id="89148982" tvg-name="雄县" tvg-chno="833"
+http://192.168.101.1:4023/udp/239.254.201.94:6254
+#EXTINF:-1 tvg-id="91993476" tvg-name="高阳新闻" tvg-chno="834"
+http://192.168.101.1:4023/udp/239.254.201.96:6253
+#EXTINF:-1 tvg-id="99112403" tvg-name="安新综合" tvg-chno="835"
+http://192.168.101.1:4023/udp/239.254.201.99:6255
+#EXTINF:-1 tvg-id="107107939" tvg-name="容城-1" tvg-chno="836"
+http://192.168.101.1:4023/udp/239.254.201.102:6256
+#EXTINF:-1 tvg-id="20000097" tvg-name="冀州-1" tvg-chno="851"
+http://192.168.101.1:4023/udp/239.254.200.179:5346
+#EXTINF:-1 tvg-id="20000110" tvg-name="冀州-2" tvg-chno="852"
+http://192.168.101.1:4023/udp/239.254.200.180:5347
+#EXTINF:-1 tvg-id="54867912" tvg-name="安平-1" tvg-chno="853"
+http://192.168.101.1:4023/udp/239.254.201.42:5348
+#EXTINF:-1 tvg-id="54867908" tvg-name="安平-2" tvg-chno="854"
+http://192.168.101.1:4023/udp/239.254.201.43:5349
+#EXTINF:-1 tvg-id="20000112" tvg-name="景县-1" tvg-chno="855"
+http://192.168.101.1:4023/udp/239.254.200.240:5350
+#EXTINF:-1 tvg-id="20000201" tvg-name="景县-2" tvg-chno="856"
+http://192.168.101.1:4023/udp/239.254.200.241:5351
+#EXTINF:-1 tvg-id="54869363" tvg-name="饶阳-1" tvg-chno="857"
+http://192.168.101.1:4023/udp/239.254.201.44:5353
+#EXTINF:-1 tvg-id="54869358" tvg-name="饶阳-2" tvg-chno="858"
+http://192.168.101.1:4023/udp/239.254.201.45:5354
+#EXTINF:-1 tvg-id="54869713" tvg-name="深州综合" tvg-chno="859"
+http://192.168.101.1:4023/udp/239.254.201.46:5357
+#EXTINF:-1 tvg-id="54869355" tvg-name="深州影视" tvg-chno="860"
+http://192.168.101.1:4023/udp/239.254.201.47:5358
+#EXTINF:-1 tvg-id="1116" tvg-name="武邑-1" tvg-chno="861"
+http://192.168.101.1:4023/udp/239.254.201.8:5355
+#EXTINF:-1 tvg-id="1115" tvg-name="武邑-2" tvg-chno="862"
+http://192.168.101.1:4023/udp/239.254.201.9:5356
+#EXTINF:-1 tvg-id="95299039" tvg-name="阜城" tvg-chno="864"
+http://192.168.101.1:4023/udp/239.254.201.98:5361
+#EXTINF:-1 tvg-id="147527498" tvg-name="故城-1" tvg-chno="865"
+http://192.168.101.1:4023/udp/239.254.201.126:5362
+#EXTINF:-1 tvg-id="20000160" tvg-name="清河-1" tvg-chno="868"
+http://192.168.101.1:4023/udp/239.254.200.170:5366
+#EXTINF:-1 tvg-id="20000159" tvg-name="清河-2" tvg-chno="869"
+http://192.168.101.1:4023/udp/239.254.200.171:5367
+#EXTINF:-1 tvg-id="54869368" tvg-name="广宗-1" tvg-chno="872"
+http://192.168.101.1:4023/udp/239.254.201.50:5373
+#EXTINF:-1 tvg-id="41903669" tvg-name="武安新闻综合" tvg-chno="873"
+http://192.168.101.1:4023/udp/239.254.201.6:5216
+#EXTINF:-1 tvg-id="41903665" tvg-name="武安民生综艺" tvg-chno="874"
+http://192.168.101.1:4023/udp/239.254.201.7:5217
+#EXTINF:-1 tvg-id="54869347" tvg-name="宁晋-1" tvg-chno="875"
+http://192.168.101.1:4023/udp/239.254.201.51:5375
+#EXTINF:-1 tvg-id="54869354" tvg-name="宁晋-2" tvg-chno="876"
+http://192.168.101.1:4023/udp/239.254.201.52:5376
+#EXTINF:-1 tvg-id="54867876" tvg-name="平乡综合" tvg-chno="877"
+http://192.168.101.1:4023/udp/239.254.201.53:5378
+#EXTINF:-1 tvg-id="59175759" tvg-name="鸡泽新闻综合" tvg-chno="878"
+http://192.168.101.1:4023/udp/239.254.201.60:5218
+#EXTINF:-1 tvg-id="60776225" tvg-name="隆尧-1" tvg-chno="879"
+http://192.168.101.1:4023/udp/239.254.201.69:5379
+#EXTINF:-1 tvg-id="63427963" tvg-name="广平新闻频道" tvg-chno="880"
+http://192.168.101.1:4023/udp/239.254.201.70:5220
+#EXTINF:-1 tvg-id="68613225" tvg-name="南和综合" tvg-chno="881"
+http://192.168.101.1:4023/udp/239.254.201.72:6000
+#EXTINF:-1 tvg-id="73338886" tvg-name="临漳-1" tvg-chno="882"
+http://192.168.101.1:4023/udp/239.254.201.73:5221
+#EXTINF:-1 tvg-id="87307132" tvg-name="内丘-1" tvg-chno="883"
+http://192.168.101.1:4023/udp/239.254.201.77:5380
+#EXTINF:-1 tvg-id="91992668" tvg-name="涉县新闻综合" tvg-chno="884"
+http://192.168.101.1:4023/udp/239.254.201.97:5222
+#EXTINF:-1 tvg-id="124247221" tvg-name="迁安新闻综合" tvg-chno="885"
+http://192.168.101.1:4023/udp/239.254.201.109:5199
+#EXTINF:-1 tvg-id="109854376" tvg-name="肥乡新闻综合" tvg-chno="886"
+http://192.168.101.1:4023/udp/239.254.201.105:5223
+#EXTINF:-1 tvg-id="109853639" tvg-name="馆陶综合" tvg-chno="887"
+http://192.168.101.1:4023/udp/239.254.201.106:5224
+#EXTINF:-1 tvg-id="122373392" tvg-name="乐亭新闻综合" tvg-chno="888"
+http://192.168.101.1:4023/udp/239.254.201.107:5200
+#EXTINF:-1 tvg-id="20000098" tvg-name="沙河新闻综合" tvg-chno="889"
+http://192.168.101.1:4023/udp/239.254.200.181:5369
+#EXTINF:-1 tvg-id="20000107" tvg-name="沙河经济生活" tvg-chno="890"
+http://192.168.101.1:4023/udp/239.254.200.182:5368
+#EXTINF:-1 tvg-id="20000225" tvg-name="曲周新闻" tvg-chno="891"
+http://192.168.101.1:4023/udp/239.254.200.236:5210
+#EXTINF:-1 tvg-id="20000183" tvg-name="曲周快乐" tvg-chno="892"
+http://192.168.101.1:4023/udp/239.254.200.237:5211
+#EXTINF:-1 tvg-id="54869376" tvg-name="南宫-1" tvg-chno="893"
+http://192.168.101.1:4023/udp/239.254.201.48:5371
+#EXTINF:-1 tvg-id="54869346" tvg-name="南宫-2" tvg-chno="894"
+http://192.168.101.1:4023/udp/239.254.201.49:5372
+#EXTINF:-1 tvg-id="54867869" tvg-name="永年新闻" tvg-chno="895"
+http://192.168.101.1:4023/udp/239.254.201.54:5206
+#EXTINF:-1 tvg-id="54867868" tvg-name="永年民生" tvg-chno="896"
+http://192.168.101.1:4023/udp/239.254.201.55:5207
+#EXTINF:-1 tvg-id="55116041" tvg-name="丰润" tvg-chno="899"
+http://192.168.101.1:4023/udp/239.254.201.58:5197
+#EXTINF:-1 tvg-id="56518769" tvg-name="丰润-2" tvg-chno="900"
+http://192.168.101.1:4023/udp/239.254.201.59:5198
+#EXTINF:-1 tvg-id="89149313" tvg-name="主视角-4K" tvg-chno="949"
+http://192.168.101.1:4023/udp/239.254.201.91:6000
+#EXTINF:-1 tvg-id="89149314" tvg-name="主视角-高清" tvg-chno="950"
+http://192.168.101.1:4023/udp/239.254.201.92:6000
+#EXTINF:-1 tvg-id="89148986" tvg-name="辅视角1-高清" tvg-chno="951"
+http://192.168.101.1:4023/udp/239.254.201.93:6000
+#EXTINF:-1 tvg-id="87308954" tvg-name="辅视角2-高清" tvg-chno="952"
+http://192.168.101.1:4023/udp/239.254.201.83:6000
+#EXTINF:-1 tvg-id="87310590" tvg-name="辅视角3-高清" tvg-chno="953"
+http://192.168.101.1:4023/udp/239.254.201.84:6000
+#EXTINF:-1 tvg-id="87309934" tvg-name="主视角-标清" tvg-chno="954"
+http://192.168.101.1:4023/udp/239.254.201.85:6000
+#EXTINF:-1 tvg-id="87310268" tvg-name="辅视角1-标清" tvg-chno="955"
+http://192.168.101.1:4023/udp/239.254.201.86:6000
+#EXTINF:-1 tvg-id="87312419" tvg-name="辅视角2-标清" tvg-chno="956"
+http://192.168.101.1:4023/udp/239.254.201.87:6000
+#EXTINF:-1 tvg-id="87308964" tvg-name="辅视角3-标清" tvg-chno="957"
+http://192.168.101.1:4023/udp/239.254.201.88:6000
+#EXTINF:-1 tvg-id="87310651" tvg-name="舞比快乐总决赛三屏评委信号" tvg-chno="958"
+http://192.168.101.1:4023/udp/239.254.201.89:6000
+#EXTINF:-1 tvg-id="87310611" tvg-name="舞比快乐总决赛四屏信号" tvg-chno="959"
+http://192.168.101.1:4023/udp/239.254.201.90:6000
+#EXTINF:-1 tvg-id="20000230" tvg-name="4k直播" tvg-chno="960"
+http://192.168.101.1:4023/udp/239.254.200.243:6000
+#EXTINF:-1 tvg-id="60018280" tvg-name="临时直播频道2" tvg-chno="961"
+http://192.168.101.1:4023/udp/239.254.201.65:6000
+#EXTINF:-1 tvg-id="60018271" tvg-name="临时直播频道3" tvg-chno="962"
+http://192.168.101.1:4023/udp/239.254.201.66:6000
+#EXTINF:-1 tvg-id="60018279" tvg-name="临时直播频道4" tvg-chno="963"
+http://192.168.101.1:4023/udp/239.254.201.67:6000
+#EXTINF:-1 tvg-id="60018263" tvg-name="临时直播频道5" tvg-chno="964"
+http://192.168.101.1:4023/udp/239.254.201.68:6000
+#EXTINF:-1 tvg-id="99115128" tvg-name="SLTV" tvg-chno="973"
+http://192.168.101.1:4023/udp/239.254.201.100:5179
+#EXTINF:-1 tvg-id="64846187" tvg-name="PPTV7-铁血英超" tvg-chno="974"
+http://192.168.101.1:4023/udp/239.254.200.232:6000
+#EXTINF:-1 tvg-id="64846199" tvg-name="PPTV8-魅力西甲" tvg-chno="975"
+http://192.168.101.1:4023/udp/239.254.200.233:6000
+#EXTINF:-1 tvg-id="64846195" tvg-name="PPTV9-荣耀中超" tvg-chno="976"
+http://192.168.101.1:4023/udp/239.254.200.234:6000
+#EXTINF:-1 tvg-id="64846191" tvg-name="PPTV10-聚体育" tvg-chno="977"
+http://192.168.101.1:4023/udp/239.254.200.235:6000
+#EXTINF:-1 tvg-id="37865680" tvg-name="电竞世界" tvg-chno="980"
+http://192.168.101.1:4023/udp/239.254.200.249:6284
+#EXTINF:-1 tvg-id="64845347" tvg-name="PPTV-1" tvg-chno="981"
+http://192.168.101.1:4023/udp/239.254.200.204:6000
+#EXTINF:-1 tvg-id="64842946" tvg-name="PPTV-2" tvg-chno="982"
+http://192.168.101.1:4023/udp/239.254.200.205:6000
+#EXTINF:-1 tvg-id="64845343" tvg-name="PPTV-3" tvg-chno="983"
+http://192.168.101.1:4023/udp/239.254.200.206:6000
+#EXTINF:-1 tvg-id="64846203" tvg-name="PPTV-4" tvg-chno="984"
+http://192.168.101.1:4023/udp/239.254.200.207:6000
+#EXTINF:-1 tvg-id="64844566" tvg-name="PPTV-5" tvg-chno="985"
+http://192.168.101.1:4023/udp/239.254.200.208:6000
+#EXTINF:-1 tvg-id="64846183" tvg-name="PPTV-6" tvg-chno="986"
+http://192.168.101.1:4023/udp/239.254.200.209:6000
+#EXTINF:-1 tvg-id="20000200" tvg-name="超级女声组合流" tvg-chno="987"
+http://192.168.101.1:4023/udp/239.254.200.192:5386
+#EXTINF:-1 tvg-id="20000193" tvg-name="超女主信号不带弹幕" tvg-chno="988"
+http://192.168.101.1:4023/udp/239.254.200.193:5387
+#EXTINF:-1 tvg-id="20000191" tvg-name="超女主信号带弹幕" tvg-chno="989"
+http://192.168.101.1:4023/udp/239.254.200.194:5388
+#EXTINF:-1 tvg-id="20000195" tvg-name="超女818" tvg-chno="990"
+http://192.168.101.1:4023/udp/239.254.200.195:5389
+#EXTINF:-1 tvg-id="20000192" tvg-name="超级女声频道1" tvg-chno="991"
+http://192.168.101.1:4023/udp/239.254.200.196:5390
+#EXTINF:-1 tvg-id="20000199" tvg-name="超级女声频道2" tvg-chno="992"
+http://192.168.101.1:4023/udp/239.254.200.197:5391
+#EXTINF:-1 tvg-id="20000198" tvg-name="超级女声频道3" tvg-chno="993"
+http://192.168.101.1:4023/udp/239.254.200.198:5392
+#EXTINF:-1 tvg-id="20000197" tvg-name="超级女声频道4" tvg-chno="994"
+http://192.168.101.1:4023/udp/239.254.200.199:5393
+#EXTINF:-1 tvg-id="20000196" tvg-name="超级女声频道5" tvg-chno="995"
+http://192.168.101.1:4023/udp/239.254.200.200:5394
+#EXTINF:-1 tvg-id="20000194" tvg-name="超级女声频道6" tvg-chno="996"
+http://192.168.101.1:4023/udp/239.254.200.201:5395
+#EXTINF:-1 tvg-id="20000234" tvg-name="九屏直播频道" tvg-chno="997"
+http://192.168.101.1:4023/udp/239.254.200.248:6000
+#EXTINF:-1 tvg-id="20000154" tvg-name="中式八球国际公开赛" tvg-chno="998"
+http://192.168.101.1:4023/udp/239.254.200.187:6000
