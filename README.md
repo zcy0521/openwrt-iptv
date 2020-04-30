@@ -107,16 +107,6 @@ config rule
 	option target 'ACCEPT'
 ```
 
-- 新建接口启动脚本`/etc/hotplug.d/iface/99-iptv-wan`
-
-```shell script
-if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "iptv-wan" ]; then
-
-    logger -t hotplug "Interface: '${INTERFACE}' ${ACTION}, adding custom routes..."
-
-fi
-```
-
 ### Guest
 
 - 新建网络接口`guest`
