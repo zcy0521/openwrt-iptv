@@ -1,4 +1,4 @@
 if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "wan" ]; then
-    logger -t hotplug "Interface: ${$INTERFACE} ${ACTION}, adding custom routes"
+    logger -t hotplug "Interface: '${INTERFACE}' ${ACTION}, adding custom routes..."
     ip route add 61.167.60.0/24 via
 fi
