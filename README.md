@@ -116,7 +116,7 @@ vi /etc/config/network
 config interface 'guest'
 	option ifname 'eth3'
 	option proto 'static'
-	option ipaddr '192.168.101.1'
+	option ipaddr '192.168.103.1'
 	option netmask '255.255.255.0'
 ```
 
@@ -172,7 +172,7 @@ config interface 'iptv-lan'
 	option proto 'static'
 	option type 'bridge'
 	option igmp_snooping '1'
-	option ipaddr '192.168.102.1'
+	option ipaddr '192.168.104.1'
 	option netmask '255.255.255.0'
 ```
 
