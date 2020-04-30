@@ -107,12 +107,13 @@ config rule
 	option target 'ACCEPT'
 ```
 
-- 新建接口启动脚本`/etc/hotplug.d/iface/02-iptv-wan`
+- 新建接口启动脚本`/etc/hotplug.d/iface/99-iptv-wan`
 
 ```shell script
-if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "wan" ]; then
-    logger -t hotplug "Interface: ${$INTERFACE} ${ACTION}, adding custom routes..."
-    ip route add 239.254.200.0/23 via
+if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "iptv-wan" ]; then
+
+    logger -t hotplug "Interface: '${INTERFACE}' ${ACTION}, adding custom routes..."
+
 fi
 ```
 
