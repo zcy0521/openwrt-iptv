@@ -107,29 +107,6 @@ config rule
 	option target 'ACCEPT'
 ```
 
-- 新建接口启动脚本`/etc/hotplug.d/iface/99-iptv_wan`
-
-```shell script
-if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "iptv_wan" ]; then
-
-    logger -t hotplug "Interface: '${INTERFACE}' ${ACTION}, adding custom routes..."
-
-    gateway=$(ip route show default | grep "eth2" | awk '{print $3}')
-
-    # ip range
-    ip route add 192.168.0.0/24 via $gateway
-    ip route add 192.168.4.0/24 via $gateway
-    ip route add 192.168.5.0/24 via $gateway
-    ip route add 192.168.7.0/24 via $gateway
-    ip route add 192.168.24.0/24 via $gateway
-    ip route add 192.168.25.0/24 via $gateway
-    ip route add 192.168.26.0/24 via $gateway
-    ip route add 192.168.101.0/24 via $gateway
-    ip route add 192.168.102.0/24 via $gateway
-    ip route add 224.0.0.0/4 via $gateway
-fi
-```
-
 ### Guest
 
 - 新建网络接口`/etc/config/netwrok`
@@ -138,7 +115,7 @@ fi
 config interface 'guest'
 	option ifname 'eth3'
 	option proto 'static'
-	option ipaddr '192.168.103.1'
+	option ipaddr '192.168.101.1'
 	option netmask '255.255.255.0'
 ```
 
@@ -260,7 +237,7 @@ config interface 'iptv_lan'
 	option proto 'static'
 	option type 'bridge'
 	option igmp_snooping '1'
-	option ipaddr '192.168.104.1'
+	option ipaddr '192.168.102.1'
 	option netmask '255.255.255.0'
 ```
 
@@ -329,4 +306,23 @@ net.ipv4.conf.all.force_igmp_version=2
 
 service igmpproxy enable
 service igmpproxy start
+```
+
+- 安装`MWAN3`
+
+```shell script
+opkg update
+opkg install mwan3 luci-app-mwan3
+
+vi /etc/config/mwan3
+config rule 'iptv_rule'
+	option src_ip '192.168.102.0/24'
+	option proto 'all'
+	option sticky '0'
+	option use_policy 'iptv_only'
+
+config rule 'wan_rule'
+	option proto 'all'
+	option sticky '0'
+	option use_policy 'wan_only'
 ```
