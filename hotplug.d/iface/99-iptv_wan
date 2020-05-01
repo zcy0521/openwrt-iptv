@@ -1,4 +1,4 @@
-if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "iptv-wan" ]; then
+if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "iptv_wan" ]; then
 
     logger -t hotplug "Interface: '${INTERFACE}' ${ACTION}, adding custom routes..."
 

@@ -67,12 +67,13 @@ config zone
 	option network 'wan'
 ```
 
-### IPTV-WAN
+### IPTV_WAN
 
-- 新建网络接口`/etc/config/netwrok`
+- 新建网络接口`iptv_wan`
 
 ```shell script
-config interface 'iptv-wan'
+vi /etc/config/netwrok
+config interface 'iptv_wan'
 	option ifname 'eth2'
 	option proto 'dhcp'
 	option hostname 'hostname'
@@ -81,36 +82,37 @@ config interface 'iptv-wan'
 	option metric '20'
 ```
 
-- 编辑防火墙`/etc/config/firewall`
+- 编辑防火墙
 
 ```shell script
+vi /etc/config/firewall
 config zone
-	option name 'iptv-wan'
+	option name 'iptv_wan'
 	option input 'REJECT'
 	option output 'ACCEPT'
 	option forward 'REJECT'
 	option masq '1'
 	option mtu_fix '1'
-	option network 'iptv-wan'
+	option network 'iptv_wan'
 
 config rule
 	option name 'Allow-IPTV-WAN-IGMP'
-	option src 'iptv-wan'
+	option src 'iptv_wan'
 	option proto 'igmp'
 	option target 'ACCEPT'
 
 config rule
 	option name 'Allow-IPTV-WAN-UDP'
-	option src 'iptv-wan'
+	option src 'iptv_wan'
 	option proto 'udp'
 	option dest_ip '224.0.0.0/4'
 	option target 'ACCEPT'
 ```
 
-- 新建接口启动脚本`/etc/hotplug.d/iface/99-iptv-wan`
+- 新建接口启动脚本`/etc/hotplug.d/iface/99-iptv_wan`
 
 ```shell script
-if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "iptv-wan" ]; then
+if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "iptv_wan" ]; then
 
     logger -t hotplug "Interface: '${INTERFACE}' ${ACTION}, adding custom routes..."
 
@@ -184,95 +186,7 @@ config rule
 	option target 'ACCEPT'
 ```
 
-### IPTV-LAN
-
-- 新建网络接口`iptv-lan`
-
-```shell script
-vi /etc/config/network
-config interface 'iptv-lan'
-	option ifname 'eth4'
-	option proto 'static'
-	option type 'bridge'
-	option igmp_snooping '1'
-	option ipaddr '192.168.104.1'
-	option netmask '255.255.255.0'
-```
-
-- 开启接口`iptv-lan`的`dhcp`服务
-
-```shell script
-vi /etc/config/dhcp
-config dhcp 'iptv-lan'
-	option interface 'iptv-lan'
-	option start '100'
-	option limit '150'
-	option leasetime '12h'
-	option force '1'
-```
-
-- 编辑防火墙
-
-```shell script
-vi /etc/config/firewall
-config zone
-	option name 'iptv-lan'
-	option input 'REJECT'
-	option output 'ACCEPT'
-	option forward 'REJECT'
-	option network 'iptv-lan'
-
-config forwarding
-	option src 'iptv-lan'
-	option dest 'iptv-wan'
-
-config rule
-	option name 'Allow-IPTV-LAN-DNS'
-	option src 'iptv-lan'
-	option dest_port '53'
-	option proto 'udp'
-	option target 'ACCEPT'
-
-config rule
-	option name 'Allow-IPTV-LAN-DHCP'
-	option src 'iptv-lan'
-	option dest_port '67-68'
-	option target 'ACCEPT'
-```
-
 ## IPTV
-
-### igmpproxy to IPTV-LAN
-
-使用组播`igmpproxy`，通过`LAN`连接机顶盒，使用`WiFi`卡顿。
-
-- 安装并配置`igmpproxy`
-
-```shell script
-opkg update
-opkg install igmpproxy
-
-vi /etc/config/igmpproxy
-config igmpproxy
-	option quickleave 1
-
-config phyint
-	option network iptv-wan
-	option zone iptv-wan
-	option direction upstream
-	list altnet 0.0.0.0/0
-
-config phyint
-	option network iptv-lan
-	option zone iptv-lan
-	option direction downstream
-
-vi /etc/sysctl.conf
-net.ipv4.conf.all.force_igmp_version=2
-
-service igmpproxy enable
-service igmpproxy start
-```
 
 ### udpxy to LAN/Guest
 
@@ -284,11 +198,11 @@ service igmpproxy start
 vi /etc/config/firewall
 config forwarding
 	option src 'lan'
-	option dest 'iptv-wan'
+	option dest 'iptv_wan'
 
 config forwarding
 	option src 'guest'
-	option dest 'iptv-wan'
+	option dest 'iptv_wan'
 
 config rule
 	option name 'Allow-LAN-Udpxy'
@@ -340,16 +254,88 @@ service udpxy enable
 service udpxy start
 ```
 
-### 提取组播地址
+### igmpproxy to iptv_LAN
 
-- 从str到行尾
+使用组播`igmpproxy`，通过`LAN`连接机顶盒，使用`WiFi`卡顿。
 
-```regexp
-str.*
+- 新建网络接口`iptv_lan`
+
+```shell script
+vi /etc/config/network
+config interface 'iptv_lan'
+	option ifname 'eth4'
+	option proto 'static'
+	option type 'bridge'
+	option igmp_snooping '1'
+	option ipaddr '192.168.104.1'
+	option netmask '255.255.255.0'
 ```
 
-- 从str到行首
+- 开启接口`iptv_lan`的`dhcp`服务
 
-```regexp
-^.*?str
+```shell script
+vi /etc/config/dhcp
+config dhcp 'iptv_lan'
+	option interface 'iptv_lan'
+	option start '100'
+	option limit '150'
+	option leasetime '12h'
+	option force '1'
+```
+
+- 编辑防火墙
+
+```shell script
+vi /etc/config/firewall
+config zone
+	option name 'iptv_lan'
+	option input 'REJECT'
+	option output 'ACCEPT'
+	option forward 'REJECT'
+	option network 'iptv_lan'
+
+config forwarding
+	option src 'iptv_lan'
+	option dest 'iptv_wan'
+
+config rule
+	option name 'Allow-IPTV-LAN-DNS'
+	option src 'iptv_lan'
+	option dest_port '53'
+	option proto 'udp'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-IPTV-LAN-DHCP'
+	option src 'iptv_lan'
+	option dest_port '67-68'
+	option target 'ACCEPT'
+```
+
+- 安装并配置`igmpproxy`
+
+```shell script
+opkg update
+opkg install igmpproxy
+
+vi /etc/config/igmpproxy
+config igmpproxy
+	option quickleave 1
+
+config phyint
+	option network iptv_wan
+	option zone iptv_wan
+	option direction upstream
+	list altnet 0.0.0.0/0
+
+config phyint
+	option network iptv_lan
+	option zone iptv_lan
+	option direction downstream
+
+vi /etc/sysctl.conf
+net.ipv4.conf.all.force_igmp_version=2
+
+service igmpproxy enable
+service igmpproxy start
 ```
