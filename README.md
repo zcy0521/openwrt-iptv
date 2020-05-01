@@ -72,7 +72,6 @@ config zone
 - 新建网络接口`/etc/config/netwrok`
 
 ```shell script
-vi /etc/config/netwrok
 config interface 'iptv_wan'
 	option ifname 'eth2'
 	option proto 'dhcp'
@@ -85,7 +84,6 @@ config interface 'iptv_wan'
 - 编辑防火墙`/etc/config/firewall`
 
 ```shell script
-vi /etc/config/firewall
 config zone
 	option name 'iptv_wan'
 	option input 'REJECT'
@@ -137,7 +135,6 @@ fi
 - 新建网络接口`/etc/config/netwrok`
 
 ```shell script
-vi /etc/config/network
 config interface 'guest'
 	option ifname 'eth3'
 	option proto 'static'
@@ -148,7 +145,6 @@ config interface 'guest'
 - 开启接口dhcp`/etc/config/dhcp`
 
 ```shell script
-vi /etc/config/dhcp
 config dhcp 'guest'
 	option interface 'guest'
 	option start '100'
@@ -160,7 +156,6 @@ config dhcp 'guest'
 - 编辑防火墙`/etc/config/firewall`
 
 ```shell script
-vi /etc/config/firewall
 config zone
 	option name 'guest'
 	option input 'REJECT'
@@ -195,7 +190,6 @@ config rule
 - 编辑防火墙`/etc/config/firewall`
 
 ```shell script
-vi /etc/config/firewall
 config forwarding
 	option src 'lan'
 	option dest 'iptv_wan'
@@ -261,7 +255,6 @@ service udpxy start
 - 新建网络接口`/etc/config/netwrok`
 
 ```shell script
-vi /etc/config/network
 config interface 'iptv_lan'
 	option ifname 'eth4'
 	option proto 'static'
@@ -274,7 +267,6 @@ config interface 'iptv_lan'
 - 开启接口dhcp`/etc/config/dhcp`
 
 ```shell script
-vi /etc/config/dhcp
 config dhcp 'iptv_lan'
 	option interface 'iptv_lan'
 	option start '100'
@@ -286,7 +278,6 @@ config dhcp 'iptv_lan'
 - 编辑防火墙`/etc/config/firewall`
 
 ```shell script
-vi /etc/config/firewall
 config zone
 	option name 'iptv_lan'
 	option input 'REJECT'
