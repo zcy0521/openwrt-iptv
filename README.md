@@ -321,6 +321,18 @@ config rule 'iptv_rule'
 	option sticky '0'
 	option use_policy 'iptv_only'
 
+config rule 'iptv_igmp'
+	option dest_ip '239.254.200.0/23'
+	option proto 'all'
+	option sticky '0'
+	option use_policy 'iptv_only'
+
+config rule 'iptv_rtsp'
+	option dest_ip '192.168.24.0/22'
+	option proto 'all'
+	option sticky '0'
+	option use_policy 'iptv_only'
+
 config rule 'wan_rule'
 	option proto 'all'
 	option sticky '0'
