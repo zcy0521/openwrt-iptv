@@ -225,7 +225,7 @@ service udpxy enable
 service udpxy start
 ```
 
-### igmpproxy to iptv_LAN
+### igmpproxy to IPTV_LAN
 
 使用组播`igmpproxy`，通过`LAN`连接机顶盒，使用`WiFi`卡顿。
 
