@@ -107,6 +107,29 @@ config rule
 	option target 'ACCEPT'
 ```
 
+- 新建接口启动脚本`/etc/hotplug.d/iface/99-iptv-wan`
+
+```shell script
+if [ "${ACTION}" = "ifup" ] && [ "${INTERFACE}" = "iptv-wan" ]; then
+
+    logger -t hotplug "Interface: '${INTERFACE}' ${ACTION}, adding custom routes..."
+
+    gateway=$(ip route show default | grep "eth2" | awk '{print $3}')
+
+    # ip range
+    ip route add 192.168.0.0/24 via gateway
+    ip route add 192.168.4.0/24 via gateway
+    ip route add 192.168.5.0/24 via gateway
+    ip route add 192.168.7.0/24 via gateway
+    ip route add 192.168.24.0/24 via gateway
+    ip route add 192.168.25.0/24 via gateway
+    ip route add 192.168.26.0/24 via gateway
+    ip route add 192.168.101.0/24 via gateway
+    ip route add 192.168.102.0/24 via gateway
+    ip route add 224.0.0.0/4 via gateway
+fi
+```
+
 ### Guest
 
 - 新建网络接口`guest`
