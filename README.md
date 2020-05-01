@@ -69,7 +69,7 @@ config zone
 
 ### IPTV_WAN
 
-- 新建网络接口`iptv_wan`
+- 新建网络接口`/etc/config/netwrok`
 
 ```shell script
 vi /etc/config/netwrok
@@ -82,7 +82,7 @@ config interface 'iptv_wan'
 	option metric '20'
 ```
 
-- 编辑防火墙
+- 编辑防火墙`/etc/config/firewall`
 
 ```shell script
 vi /etc/config/firewall
@@ -134,7 +134,7 @@ fi
 
 ### Guest
 
-- 新建网络接口`guest`
+- 新建网络接口`/etc/config/netwrok`
 
 ```shell script
 vi /etc/config/network
@@ -145,7 +145,7 @@ config interface 'guest'
 	option netmask '255.255.255.0'
 ```
 
-- 开启接口`guest`的`dhcp`服务
+- 开启接口dhcp`/etc/config/dhcp`
 
 ```shell script
 vi /etc/config/dhcp
@@ -157,7 +157,7 @@ config dhcp 'guest'
 	option force '1'
 ```
 
-- 编辑防火墙
+- 编辑防火墙`/etc/config/firewall`
 
 ```shell script
 vi /etc/config/firewall
@@ -192,7 +192,7 @@ config rule
 
 使用组播转单播`udpxy`，通过`WiFi`连接播放设备。
 
-- 编辑防火墙
+- 编辑防火墙`/etc/config/firewall`
 
 ```shell script
 vi /etc/config/firewall
@@ -258,7 +258,7 @@ service udpxy start
 
 使用组播`igmpproxy`，通过`LAN`连接机顶盒，使用`WiFi`卡顿。
 
-- 新建网络接口`iptv_lan`
+- 新建网络接口`/etc/config/netwrok`
 
 ```shell script
 vi /etc/config/network
@@ -271,7 +271,7 @@ config interface 'iptv_lan'
 	option netmask '255.255.255.0'
 ```
 
-- 开启接口`iptv_lan`的`dhcp`服务
+- 开启接口dhcp`/etc/config/dhcp`
 
 ```shell script
 vi /etc/config/dhcp
@@ -283,7 +283,7 @@ config dhcp 'iptv_lan'
 	option force '1'
 ```
 
-- 编辑防火墙
+- 编辑防火墙`/etc/config/firewall`
 
 ```shell script
 vi /etc/config/firewall
