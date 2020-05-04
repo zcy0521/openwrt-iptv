@@ -178,6 +178,15 @@ service igmpproxy enable
 service igmpproxy start
 ```
 
+- 编辑`LAN`
+
+```shell script
+vi /etc/config/netwrok
+config interface 'lan'
+	option type 'bridge'
+	option igmp_snooping '1'
+```
+
 - 编辑防火墙`/etc/config/firewall`
 
 ```shell script
