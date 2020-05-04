@@ -2,32 +2,25 @@
 
 ## OpenWrt
 
-### LAN
-
-- 编辑网络接口`/etc/config/netwrok`
+- LAN
 
 ```shell script
+vi /etc/config/netwrok
 config interface 'lan'
 	option ifname 'eth0'
 	option proto 'static'
 	option ipaddr '192.168.100.1'
 	option netmask '255.255.255.0'
-```
 
-- 开启接口dhcp`/etc/config/dhcp`
-
-```shell script
+vi /etc/config/dhcp
 config dhcp 'lan'
 	option interface 'lan'
 	option start '100'
 	option limit '150'
 	option leasetime '12h'
 	option force '1'
-```
 
-- 编辑防火墙`/etc/config/firewall`
-
-```shell script
+vi /etc/config/firewall
 config zone
 	option name 'lan'
 	option input 'ACCEPT'
@@ -40,11 +33,10 @@ config forwarding
 	option dest 'wan'
 ```
 
-### WAN
-
-- 新建网络接口`/etc/config/netwrok`
+- WAN
 
 ```shell script
+vi /etc/config/netwrok
 config interface 'wan'
 	option ifname 'eth1'
 	option proto 'pppoe'
@@ -52,11 +44,8 @@ config interface 'wan'
 	option password 'password'
 	option ipv6 '0'
 	option metric '10'
-```
 
-- 编辑防火墙`/etc/config/firewall`
-
-```shell script
+vi /etc/config/firewall
 config zone
 	option name 'wan'
 	option input 'REJECT'
@@ -67,11 +56,10 @@ config zone
 	option network 'wan'
 ```
 
-### IPTV
-
-- 新建网络接口`/etc/config/netwrok`
+- IPTV
 
 ```shell script
+vi /etc/config/netwrok
 config interface 'iptv'
 	option ifname 'eth2'
 	option proto 'dhcp'
@@ -79,11 +67,8 @@ config interface 'iptv'
 	option vendorid 'vendorid'
 	option macaddr '00:00:00:00:00:00'
 	option metric '20'
-```
 
-- 编辑防火墙`/etc/config/firewall`
-
-```shell script
+vi /etc/config/firewall
 config zone
 	option name 'iptv'
 	option input 'REJECT'
@@ -107,32 +92,25 @@ config rule
 	option target 'ACCEPT'
 ```
 
-### Guest
-
-- 新建网络接口`/etc/config/netwrok`
+- Guest
 
 ```shell script
+vi /etc/config/netwrok
 config interface 'guest'
 	option ifname 'eth3'
 	option proto 'static'
 	option ipaddr '192.168.101.1'
 	option netmask '255.255.255.0'
-```
 
-- 开启接口dhcp`/etc/config/dhcp`
-
-```shell script
+vi /etc/config/dhcp
 config dhcp 'guest'
 	option interface 'guest'
 	option start '100'
 	option limit '150'
 	option leasetime '12h'
 	option force '1'
-```
 
-- 编辑防火墙`/etc/config/firewall`
-
-```shell script
+vi /etc/config/firewall
 config zone
 	option name 'guest'
 	option input 'REJECT'
@@ -160,9 +138,41 @@ config rule
 
 ## IPTV
 
-### udpxy to LAN/Guest
+### igmpproxy
 
-使用组播转单播`udpxy`，通过`WiFi`连接播放设备。
+使用组播`igmpproxy`，将组播转发至`lan`，使用WiFi无法播放。
+
+- 安装并配置`igmpproxy`
+
+```shell script
+opkg update
+opkg install igmpproxy
+
+vi /etc/config/igmpproxy
+config igmpproxy
+	option quickleave 1
+
+config phyint
+	option network iptv
+	option zone iptv
+	option direction upstream
+	list altnet 0.0.0.0/0
+
+config phyint
+	option network lan
+	option zone lan
+	option direction downstream
+
+vi /etc/sysctl.conf
+net.ipv4.conf.all.force_igmp_version=2
+
+service igmpproxy enable
+service igmpproxy start
+```
+
+### udpxy
+
+使用组播转单播`udpxy`，将组播转为单播，设备连接WiFi播放。
 
 - 编辑防火墙`/etc/config/firewall`
 
@@ -225,44 +235,18 @@ service udpxy enable
 service udpxy start
 ```
 
-### igmpproxy to LAN
+### MWAN3
 
-使用组播`igmpproxy`，通过`LAN`连接机顶盒，使用`WiFi`卡顿。
-
-- 安装并配置`igmpproxy`
-
-```shell script
-opkg update
-opkg install igmpproxy
-
-vi /etc/config/igmpproxy
-config igmpproxy
-	option quickleave 1
-
-config phyint
-	option network iptv
-	option zone iptv
-	option direction upstream
-	list altnet 0.0.0.0/0
-
-config phyint
-	option network lan
-	option zone lan
-	option direction downstream
-
-vi /etc/sysctl.conf
-net.ipv4.conf.all.force_igmp_version=2
-
-service igmpproxy enable
-service igmpproxy start
-```
-
-- 安装`MWAN3`
+- 安装
 
 ```shell script
 opkg update
 opkg install mwan3 luci-app-mwan3
+```
 
+- 设置规则
+
+```shell script
 vi /etc/config/mwan3
 config rule 'iptv_igmp'
 	option dest_ip '239.254.200.0/23'
