@@ -142,12 +142,16 @@ config rule
 
 `igmpproxy`将组播转发至`lan`，使用WiFi无法播放。
 
-- 安装并配置`igmpproxy`
+- 安装`igmpproxy`
 
 ```shell script
 opkg update
 opkg install igmpproxy
+```
 
+- 配置`igmpproxy`
+
+```shell script
 vi /etc/config/igmpproxy
 config igmpproxy
 	option quickleave 1
@@ -165,14 +169,14 @@ config phyint
 
 vi /etc/sysctl.conf
 net.ipv4.conf.all.force_igmp_version=2
+```
 
+- 启动`igmpproxy`服务
+
+```shell script
 service igmpproxy enable
 service igmpproxy start
 ```
-
-### udpxy
-
-`udpxy`将组播转为单播，设备可以连接WiFi播放。
 
 - 编辑防火墙`/etc/config/firewall`
 
@@ -180,30 +184,22 @@ service igmpproxy start
 config forwarding
 	option src 'lan'
 	option dest 'iptv'
-
-config forwarding
-	option src 'guest'
-	option dest 'iptv'
-
-config rule
-	option name 'Allow-LAN-Udpxy'
-	option src 'lan'
-	option dest_port '4022'
-	option target 'ACCEPT'
-
-config rule
-	option name 'Allow-Guest-Udpxy'
-	option src 'guest'
-	option dest_port '4023'
-	option target 'ACCEPT'
 ```
 
-- 安装并配置`udpxy`
+### udpxy
+
+`udpxy`将组播转为单播，设备可以连接WiFi播放。
+
+- 安装`udpxy`
 
 ```shell script
 opkg update
 opkg install udpxy luci-app-udpxy
-  
+```
+
+- 配置`udpxy`
+
+```shell script
 vi /etc/config/udpxy
 config udpxy 'lan'
 	option disabled '0'
@@ -230,9 +226,37 @@ config udpxy 'guest'
 	option port '4023'
 	option source 'eth2'
 	option log_file '/var/log/udpxy_guest'
+```
 
+- 启动`udpxy`服务
+
+```shell script
 service udpxy enable
 service udpxy start
+```
+
+- 编辑防火墙`/etc/config/firewall`
+
+```shell script
+config forwarding
+	option src 'lan'
+	option dest 'iptv'
+
+config forwarding
+	option src 'guest'
+	option dest 'iptv'
+
+config rule
+	option name 'Allow-LAN-Udpxy'
+	option src 'lan'
+	option dest_port '4022'
+	option target 'ACCEPT'
+
+config rule
+	option name 'Allow-Guest-Udpxy'
+	option src 'guest'
+	option dest_port '4023'
+	option target 'ACCEPT'
 ```
 
 ### MWAN3
