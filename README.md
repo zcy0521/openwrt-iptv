@@ -140,7 +140,7 @@ config rule
 
 ### igmpproxy
 
-使用组播`igmpproxy`，将组播转发至`lan`，使用WiFi无法播放。
+`igmpproxy`将组播转发至`lan`，使用WiFi无法播放。
 
 - 安装并配置`igmpproxy`
 
@@ -172,7 +172,7 @@ service igmpproxy start
 
 ### udpxy
 
-使用组播转单播`udpxy`，将组播转为单播，设备连接WiFi播放。
+`udpxy`将组播转为单播，设备可以连接WiFi播放。
 
 - 编辑防火墙`/etc/config/firewall`
 
