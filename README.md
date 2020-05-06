@@ -138,63 +138,6 @@ config rule
 
 ## IPTV
 
-### igmpproxy
-
-`igmpproxy`将组播转发至`lan`，使用WiFi无法播放。
-
-- 安装`igmpproxy`
-
-```shell script
-opkg update
-opkg install igmpproxy
-```
-
-- 配置`igmpproxy`
-
-```shell script
-vi /etc/config/igmpproxy
-config igmpproxy
-	option quickleave 1
-
-config phyint
-	option network iptv
-	option zone iptv
-	option direction upstream
-	list altnet 0.0.0.0/0
-
-config phyint
-	option network lan
-	option zone lan
-	option direction downstream
-
-vi /etc/sysctl.conf
-net.ipv4.conf.all.force_igmp_version=2
-```
-
-- 启动`igmpproxy`服务
-
-```shell script
-service igmpproxy enable
-service igmpproxy start
-```
-
-- 编辑`LAN`
-
-```shell script
-vi /etc/config/netwrok
-config interface 'lan'
-	option type 'bridge'
-	option igmp_snooping '1'
-```
-
-- 编辑防火墙`/etc/config/firewall`
-
-```shell script
-config forwarding
-	option src 'lan'
-	option dest 'iptv'
-```
-
 ### udpxy
 
 `udpxy`将组播转为单播，设备可以连接WiFi播放。
@@ -266,6 +209,63 @@ config rule
 	option src 'guest'
 	option dest_port '4023'
 	option target 'ACCEPT'
+```
+
+### igmpproxy
+
+`igmpproxy`将组播转发至`lan`，使用WiFi无法播放。
+
+- 安装`igmpproxy`
+
+```shell script
+opkg update
+opkg install igmpproxy
+```
+
+- 配置`igmpproxy`
+
+```shell script
+vi /etc/config/igmpproxy
+config igmpproxy
+	option quickleave 1
+
+config phyint
+	option network iptv
+	option zone iptv
+	option direction upstream
+	list altnet 0.0.0.0/0
+
+config phyint
+	option network lan
+	option zone lan
+	option direction downstream
+
+vi /etc/sysctl.conf
+net.ipv4.conf.all.force_igmp_version=2
+```
+
+- 启动`igmpproxy`服务
+
+```shell script
+service igmpproxy enable
+service igmpproxy start
+```
+
+- 编辑`LAN`
+
+```shell script
+vi /etc/config/netwrok
+config interface 'lan'
+	option type 'bridge'
+	option igmp_snooping '1'
+```
+
+- 编辑防火墙`/etc/config/firewall`
+
+```shell script
+config forwarding
+	option src 'lan'
+	option dest 'iptv'
 ```
 
 ### MWAN3
