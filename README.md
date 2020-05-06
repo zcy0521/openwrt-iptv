@@ -9,7 +9,7 @@ vi /etc/config/netwrok
 config interface 'lan'
 	option ifname 'eth0'
 	option proto 'static'
-	option ipaddr '192.168.100.1'
+	option ipaddr '192.168.2.1'
 	option netmask '255.255.255.0'
 
 vi /etc/config/dhcp
@@ -99,7 +99,7 @@ vi /etc/config/netwrok
 config interface 'guest'
 	option ifname 'eth3'
 	option proto 'static'
-	option ipaddr '192.168.101.1'
+	option ipaddr '192.168.3.1'
 	option netmask '255.255.255.0'
 
 vi /etc/config/dhcp
@@ -231,7 +231,7 @@ config udpxy 'guest'
 	option respawn '1'
 	option verbose '0'
 	option status '1'
-	option bind '192.168.101.1'
+	option bind '192.168.3.1'
 	option port '4023'
 	option source 'eth2'
 	option log_file '/var/log/udpxy_guest'
